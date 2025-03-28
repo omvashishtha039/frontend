@@ -1,0 +1,383 @@
+
+
+/*==================================
+font-family: 'Roboto', sans-serif;
+==================================== */
+
+
+/*=========== TABLE OF CONTENTS ===========
+
+1. Login
+2. Signup
+==========================================*/
+
+/*-------------------------------------
+		General css (Reset code)
+--------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #a09e9c;
+    text-transform: initial;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+a, a:hover, a:active, a:focus {
+    display: inline-block;
+    text-decoration: none;
+    color: #343a3f;
+    font-size: 16px;
+    padding: 0;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: #343a3f;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+p {
+    margin: 0;
+    color: #353535;
+    font-size: 15px;
+    line-height: 1.9;
+    text-transform: initial;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+select, input, textarea, button {
+    box-shadow: none;
+    outline: 0 !important;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    font-size: 12px;
+}
+
+html, body {
+    height: 100%;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    -webkit-transition: opacity 0.3s 0.3s ease;
+    -moz-transition: opacity 0.3s 0.3s ease;
+    -ms-transition: opacity 0.3s 0.3s ease;
+    -o-transition: opacity 0.3s 0.3s ease;
+    transition: opacity 0.3s 0.3s ease;
+    opacity: 0;
+}
+
+
+/*-------------------------------------
+         Header-top
+--------------------------------------*/
+.header-top {
+    border-bottom: 1px solid #f6f8fa;
+}
+
+.header-top ul li {
+    display: inline-block;
+}
+
+.header-top-left li, .header-top-right li {
+    display: inline-block;
+}
+
+.select-opt, .header-top-contact {
+    padding: 10px 18px;
+    border-right: 1px solid #f6f8fa;
+}
+
+.header-top-contact {
+    border-right: 0;
+    border-left: 1px solid #f6f8fa;
+    font-size: 12px;
+}
+
+.select-opt select {
+    border: none;
+    cursor: pointer;
+    color: #a7b0ba;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.select-opt option {
+    color: #a7b0ba;
+    text-transform: uppercase;
+}
+
+.header-top-right ul li a {
+    color: #a7b0ba;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+/*-------------------------------------
+     Footer
+--------------------------------------*/
+.footer-menu {padding: 45px 0;}
+.footer-menu .navbar-header{padding:0;}
+.footer-menu .navbar-header a.navbar-brand,.footer-menu.footer-menu .navbar-header a.navbar-brand:hover,.footer-menu .navbar-header a.navbar-brand:focus{
+    padding:0;
+    height: 0;
+}
+.footer-menu ul.footer-menu-item{text-align: right;}
+.footer-menu ul.footer-menu-item li{display: inline-block;}
+.footer-menu ul.footer-menu-item li a {
+    color: #859098;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 40px;
+    -webkit-transition:0.3s linear;
+    -moz-transition:0.3s linear;
+    -o-transition:0.3s linear;
+    transition:0.3s linear;
+}
+.footer-menu ul.footer-menu-item li a:hover{color: #f43032;}
+.hm-footer-copyright {
+    padding: 40px 0;
+    border-top: 1px solid #e1e5eb;
+}
+.hm-footer-copyright p,.hm-footer-copyright p a {
+    color: #a5adb3;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.footer-social {text-align: right;}
+.footer-social .fa-phone:before {
+    position: relative;
+    top: 2px;
+}
+.footer-social a ,.footer-social span {
+    display: inline-block;
+    color: #afb4bf;
+    font-size: 14px;
+    margin-left: 15px;
+    -webkit-transition: .3s; 
+    -moz-transition:.3s; 
+    -ms-transition:.3s; 
+    -o-transition:.3s;
+    transition: .3s;
+}
+.footer-social a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: #eef2f6;
+    text-align: center;
+    border-radius: 50%;
+}
+.footer-social span {margin-right:15px;margin-left: 0;color: #a5adb3;}
+.footer-social span:hover{color: #ff545a;}
+.footer-social a:hover {background:#ff545a;color: #fff;}
+
+
+
+/*===============================
+    Login & Signup
+===============================*/
+
+
+.login-form, .signup-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0px 5px rgba(71,71,71,.2);
+}
+
+.login-form h2, .signup-form h2 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    margin-bottom: 24px;
+}
+
+.login-form .form-group, .signup-form .form-group {
+    margin-bottom: 20px;
+}
+
+.login-form .form-control, .signup-form .form-control {
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.login-form .btn-primary, .signup-form .btn-primary {
+    background: #fd0008;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-form .btn-primary:hover, .signup-form .btn-primary:hover {
+    background: #f43032;
+}
+
+.login-form p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*===============================
+    Scan
+===============================*/
+
+.welcome-hero {
+    padding: 50px 0; /* Padding for the scan section */
+    background: #f8f9fa; /* Light background for contrast */
+}
+
+.welcome-hero-txt {
+    text-align: center; /* Center the title */
+}
+
+.welcome-hero-txt h2 {
+    font-size: 28px; /* Font size for the title */
+    color: #343a3f; /* Dark text color */
+    font-weight: 700; /* Bold font weight */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.welcome-hero-serch-box {
+    display: flex;
+    justify-content: center; /* Center the search box */
+    margin-top: 20px; /* Space above the search box */
+}
+
+.welcome-hero-form {
+    display: flex;
+    width: 100%; /* Full width */
+}
+
+.single-welcome-hero-form {
+    flex: 1; /* Take available space */
+    margin-right: 10px; /* Space between input and button */
+}
+
+.single-welcome-hero-form input {
+    height: 50px; /* Height for the input */
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside input */
+    font-size: 16px; /* Font size for input */
+}
+
+.welcome-hero-btn {
+    height: 50px; /* Height for the button */
+    padding: 0 20px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ff545a; /* Button color */
+    color: #fff; /* White text */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.welcome-hero-btn:hover {
+    background-color: #f43032; /* Darker shade on hover */
+}
+
+/* Result Display */
+#scanResult {
+    margin-top: 20px; /* Space above the result display */
+    text-align: center; /* Center the result text */
+    font-size: 18px; /* Font size for result text */
+    color: #343a3f; /* Dark text color */
+}
+
+
+/*===============================
+    Scroll Top
+===============================*/
+#scroll-Top  .return-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: none;
+    width: 40px;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    background:#ff545a;
+	border:1px solid #ff545a;
+	border-radius:50%;
+	-webkit-transition: .5s; 
+	-moz-transition:.5s; 
+	-ms-transition:.5s; 
+	-o-transition:.5s;
+    transition: .5s;
+	z-index: 2;
+}
+#scroll-Top  .return-to-top:hover {
+    background:#f43032;
+	border:1px solid #ff545a;
+}
+
+#scroll-Top  .return-to-top i{
+    position:relative;
+    bottom:0;
+
+}
+
+#scroll-Top  .return-to-top i{
+    position: relative;
+    animation-name: example;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration:1s;
+}
+@keyframes example {
+    0%   {bottom:0px;}
+    100%  {bottom:7px;}
+}
+/*========================Thank you=================

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up - Phishing Detection</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/lss.css">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header id="header-top" class="header-top">
+        <ul>
+            <li>
+                <div class="header-top-left">
+                    <ul>
+                        <li class="select-opt">
+                            <select name="language" id="language">
+                                <option value="default">EN</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="head-responsive-right pull-right">
+                <div class="header-top-right">
+                    <ul>
+                        <li class="header-top-contact">
+                            <a href="login.html">Log In</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </header><!--/.header-top-->
+    <!-- Header End -->
+
+    <div class="container">
+        <h2 class="text-center">Sign Up</h2>
+        <form action="dashboard.html" method="POST" class="signup-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <p class="text-center">Already have an account? <a href="login.html">Login</a></p>
+        </form>
+    </div>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
